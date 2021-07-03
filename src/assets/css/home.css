@@ -1,0 +1,59 @@
+.carousel {
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto; }
+  .carousel .inner {
+    display: flex;
+    position: absolute; }
+  .carousel .next::after, .carousel .prev::after {
+    content: url(../images/icons/next_arrow.png);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #B8B8B8;
+    font-size: 5rem;
+    width: 1em;
+    height: 1.5em;
+    transform: translateY(-50%); }
+  .carousel .prev::after {
+    content: url(../images/icons/back_arrow.png);
+    left: 0; }
+  .carousel .next:hover::after, .carousel .prev:hover::after {
+    opacity: 0.5; }
+  .carousel_slot {
+    display: flex; }
+    .carousel_slot img {
+      margin: 0 50px 0 100px; }
+    .carousel_slot h3 {
+      width: auto;
+      margin: auto 5px; }
+    .carousel_slot p {
+      margin-right: 50px;
+      line-height: 3rem;
+      font-size: 2.5rem; }
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 5px; }
+  .tabs .tab {
+    margin: 2.5px;
+    background-color: #B8B8B8;
+    width: 50px;
+    height: 10px;
+    display: inline-block;
+    opacity: 0.25;
+    transition: opacity 0.1s linear;
+    cursor: pointer; }
+    .tabs .tab:hover {
+      background-color: #212F38;
+      opacity: 0.5; }
+    .tabs .tab.active {
+      background-color: #212F38;
+      opacity: 1; }
