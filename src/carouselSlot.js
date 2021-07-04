@@ -5,7 +5,6 @@ const Slot = ({image, title, text}) => (
         <img src={image} alt=""/>
         <div>
             <h3>{title}</h3>
-            <p>{text}</p>
         </div>
     </div>
 );
