@@ -25,7 +25,7 @@ const Carousel = ({data}) => {
                     return (
                         <div key={index}>
                             {index === current && (
-                            <Slot image={slot.image_banner} title={slot.name} text={slot.slogan}/>
+                            <Slot image={slot.image_banner} title={slot.name} text={slot.slogan} link = {slot.link}/>
                             )}
                         </div>
                     )
