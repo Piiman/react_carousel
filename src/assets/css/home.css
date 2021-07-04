@@ -1,5 +1,5 @@
 .carousel {
-  width: 90%;
+  width: 100%;
   height: 300px;
   overflow: hidden;
   position: relative;
@@ -24,8 +24,6 @@
     opacity: 0.5; }
   .carousel_slot {
     display: flex; }
-    .carousel_slot img {
-      margin: 0 50px 0 100px; }
     .carousel_slot h3 {
       width: auto;
       margin: auto 5px; }
