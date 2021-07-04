@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Carousel from './carousel'
 
@@ -9,7 +9,7 @@ import './assets/css/home.css';
 function App() {
   return (
     <main>
-      carrusel implementado
+      Carrusel implementado
       <section className="carousel">
         <Carousel data={carouselData}></Carousel>
       </section>
