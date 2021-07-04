@@ -16,21 +16,32 @@
     font-size: 5rem;
     width: 1em;
     height: 1.5em;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    filter: brightness(150%); }
   .carousel .prev::after {
     content: url(../images/icons/back_arrow.png);
-    left: 0; }
+    left: 0;
+    filter: brightness(150%); }
   .carousel .next:hover::after, .carousel .prev:hover::after {
     opacity: 0.5; }
   .carousel_slot {
-    display: flex; }
-    .carousel_slot h3 {
-      width: auto;
-      margin: auto 5px; }
+    position: relative;
+    text-align: center;
+    color: white; }
+    .carousel_slot img {
+      filter: brightness(50%);
+    }
+    .carousel_slot div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .carousel_slot h1 {
+      font-size: 3em;
+      margin-bottom: 0; }
     .carousel_slot p {
-      margin-right: 50px;
-      line-height: 3rem;
-      font-size: 2.5rem; }
+      font-size: 1.5em;
+      margin-top: 0; }
 
 .tabs {
   display: flex;
